@@ -1,7 +1,0 @@
-INDEX VERSION 1.131
-F:\Java live Class Projects\Assingn\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1902316822.index
-\Question-17\src
-F:\Java live Class Projects\Assingn\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2847841342.index
-\JSTLApp-01\src\main\java
-F:\Java live Class Projects\Assingn\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3339208760.index
-\MVCCrudApp\src\main\java

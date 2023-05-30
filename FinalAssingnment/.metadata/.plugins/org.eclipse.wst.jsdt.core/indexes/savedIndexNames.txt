@@ -1,7 +1,0 @@
-INDEX VERSION 1.4+F:\Java live Class Projects\Assingn\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-300565212.index
-1902316822.index
-2296583014.index
-2639827849.index
-1726837322.index
-4293141488.index
