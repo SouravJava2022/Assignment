@@ -1,0 +1,21 @@
+package in.ineuron.JDBCUtil;
+
+import java.sql.DriverManager;
+
+public class Util {
+        static {
+        	try {
+				Class.forName("com.mysql.cj.jdbc.Driver");
+			} catch (ClassNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+        }
+        static Connection getConnection() {
+        	String url="jdbc:mysql://localhost:3306/sourav";
+			String user="root";
+			String password="123456789";
+			 return  DriverManager.getConnection(url, user, password);
+        }
+        
+}

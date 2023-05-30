@@ -1,0 +1,24 @@
+import java.util.ArrayList;
+import java.util.stream.Stream;
+
+/*
+ * 6. Write a Java program that uses stream api to perform operations on a large data set,
+     such as sorting or filtering the data.
+ */
+public class TestApp {
+
+	@SuppressWarnings({ "rawtypes", "unchecked" })
+	public static void main(String[] args) {
+		ArrayList list = new ArrayList();
+		list.add(10);
+		list.add(80);
+		list.add(50);
+		list.add(30);
+		list.add(70);
+		list.add(25);
+		list.add(65);
+        Stream stream = list.stream().sorted();
+        stream.forEach(n->System.out.println(n));
+	}
+
+}

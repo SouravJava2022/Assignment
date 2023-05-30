@@ -1,0 +1,12 @@
+/*
+ * 6. Write a Java program that uses stream api to perform operations on a large data set,
+     such as sorting or filtering the data.
+ */
+public class TestApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

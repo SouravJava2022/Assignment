@@ -1,0 +1,49 @@
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+import java.util.Scanner;
+
+/*
+ * 10. Write a Java program that reads a set of integers from the user and stores them in a
+    List. The program should then find the second largest and second smallest elements
+     in the List.
+
+ */
+
+public class TestApp  {
+
+	public static void main(String[] args) {
+		  List list = new ArrayList();
+		
+		 TestApp app = new TestApp();
+		 int i = app.commonMethod();
+		 list.add(i);
+	
+		 System.out.println(list);
+	}
+	
+	int commonMethod() {
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Please Enter The Value");
+		int i = scan.nextInt();
+		
+		int co = commonMethod2();
+		return i;
+	}
+	int commonMethod2() {
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Are you want to continue YES/NO");
+		String string = scan.next();
+		if(string.equalsIgnoreCase("yes")) {
+		int i = commonMethod();
+		return i;
+		}
+		else {
+			
+			return 0;
+		}
+		
+	}
+}
+

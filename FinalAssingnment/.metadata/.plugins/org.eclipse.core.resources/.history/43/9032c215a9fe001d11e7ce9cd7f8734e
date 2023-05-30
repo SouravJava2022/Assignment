@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>CREATE BLOG</title>
+</head>
+<body>
+    <center> <h1>Create Blog......</h1>
+      <form action="" method="post">
+      Title:<input type="text" value="Title" name="title"><br><br>
+      Description::<textarea rows="3" cols="20" value="Type Description" name="description"></textarea><br>
+      Content::<textarea rows="" cols="" value="Type Contenet" name="content"></textarea>
+      
+      </form>
+    </center>     
+</body>
+</html>

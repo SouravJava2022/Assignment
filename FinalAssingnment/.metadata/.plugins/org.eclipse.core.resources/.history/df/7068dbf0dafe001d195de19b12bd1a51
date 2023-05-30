@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app >
+  <display-name>Question-14</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>WelcomePage</display-name>
+    <servlet-name>WelcomePage</servlet-name>
+    <servlet-class>WelcomePage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>WelcomePage</servlet-name>
+    <url-pattern>/Welcome</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ThirdServlet</display-name>
+    <servlet-name>ThirdServlet</servlet-name>
+    <servlet-class>ThirdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ThirdServlet</servlet-name>
+    <url-pattern>/third</url-pattern>
+  </servlet-mapping>
+</web-app>

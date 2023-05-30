@@ -1,0 +1,107 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
+/*
+ *  9. Write a Java program that implements a producer-consumer model using
+       multithreading. The program should have a producer thread that generates random
+       numbers and adds them to a queue, and a consumer thread that reads numbers
+       from the queue and calculates their sum. The program should use synchronization to
+       ensure that the queue is accessed by only one thread at a time.
+ */
+   class Q{
+//	
+//	private int i;
+     boolean flag=false;
+//
+//	public int getI() {
+//		return i;
+//	}
+//
+//	public void setI(int i) {
+//		this.i = i;
+//	}
+//
+////	public boolean isFlag() {
+////		return flag;
+////	}
+////
+////	public void setFlag(boolean flag) {
+////		this.flag = flag;
+//	}
+	
+ }
+ class Producer implements Runnable
+ {
+	 Queue q;
+	 Q a;
+	 Producer(Queue list){
+		 
+		 System.out.println("Object is Created");
+		 this.q=list;
+	 }
+	 
+	 @Override
+	public void run(){
+		 //int k=0;
+		synchronized(this) {
+			for(int j=0;j<10;j++) {
+			// k+= j;
+				
+				//q.setI(j);
+				q.add(j);
+			 System.out.println("dsgddh"+q);
+			}
+			a.flag=true;
+			 this.notify();
+		}
+	 }
+	 
+ }
+ class Consumer implements Runnable
+ {
+	 int k=0;
+      Q a;
+      Queue q;
+	 Consumer(Queue list){
+		 System.out.println("Object is created for Consumer Thread");
+		 this.q=list;
+	 }
+	 
+	 @Override
+	public void run(){
+	      synchronized(this) {
+	    	  if(!a.flag) {
+	    	  try {
+				this.wait();
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	      }
+	      else {
+	      k+= q.getI();
+	      System.out.println("**************"+q.getI());
+	      System.out.println("Total Sum Of Number Which Producer Produce::"+k);
+	      }
+	 }
+	 }
+ }
+	 
+public class TestApp {
+
+	public static void main(String[] args) {
+		//Q q=new Q();
+		Queue list = new LinkedList();
+		Producer p = new Producer(list);
+		Consumer c = new Consumer(list);
+		Thread t1 = new Thread(p);
+		Thread t2 = new Thread(c);
+		t1.start();
+		t2.start();
+		
+		System.out.println("Main Thread");
+		
+
+	}
+}
+

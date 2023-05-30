@@ -1,0 +1,59 @@
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.Queue;
+
+/*
+ *  9. Write a Java program that implements a producer-consumer model using
+       multithreading. The program should have a producer thread that generates random
+       numbers and adds them to a queue, and a consumer thread that reads numbers
+       from the queue and calculates their sum. The program should use synchronization to
+       ensure that the queue is accessed by only one thread at a time.
+ */
+class Q{
+	private int i;
+	private boolean flag;
+	Queue q=new LinkedList();
+	public int getI() {
+		return i;
+	}
+	public void setI(int i) {
+		this.i = i;
+	}
+	public boolean isFlag() {
+		return flag;
+	}
+	public void setFlag(boolean flag) {
+		this.flag = flag;
+	}
+	public Queue getQ() {
+		return q;
+	}
+	public void setQ() {
+		q.add(i);
+		
+	}
+}
+class Producer implements Runnable{
+
+	@Override
+	public void run() {
+		
+		
+	}	
+}
+class Consumer implements Runnable{
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}	
+}
+	 
+public class TestApp {
+
+	public static void main(String[] args) {
+	
+	}
+}
+
